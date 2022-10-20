@@ -5,7 +5,7 @@ export function HeaderMenu() {
   return (
     <Header>
       <div>
-        <img src={Logo} className="reactLogo" alt="React logo" />
+        <img src={Logo} />
       </div>
       <nav>
         <ul>
