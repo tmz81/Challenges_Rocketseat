@@ -14,6 +14,7 @@
 
 body {
   overflow: hidden;
+  font-family: 'Spartan';
   background-color: var(--body-bg-color);
 }
 
@@ -34,10 +35,17 @@ label {
 }
 
 a {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   color: var(--bg-button-color);
+}
+
+a:hover {
+  width: 24%;
+  color: var(--title-color);
 }
 
 .container {
@@ -48,11 +56,12 @@ a {
 }
 
 .content {
-  width: 50%;
+  width: 58.44%;
   height: 84vh;
   margin: 2rem;
   align-items: center;
   text-align: start;
+  padding-top: 35px;
 }
 
 .logo {
@@ -61,7 +70,7 @@ a {
 }
 
 .text {
-  padding-top: 92px;
+  padding-top: 180px;
 }
 
 .text h1 {
@@ -89,13 +98,17 @@ form {
 }
 
 form button {
-  padding: 10px;
+  display: flex;
+  align-items: center;
   width: 48px;
   height: 48px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: var(--bg-button-color);
   margin-right: 15px;
+  background-color: var(--bg-button-color);
+  cursor: pointer;
+
 }
 
 form button:hover {
@@ -103,13 +116,11 @@ form button:hover {
   transition: 0.2s ease-out;
 }
 
-form button svg {
-  color: #04D361;
-}
-
 .link {
   text-decoration: none;
+  font-size: 14px;
   color: var(--bg-button-color);
+  width: 196px;
 }
 
 .link svg {
