@@ -18,10 +18,11 @@ body {
 }
 
 input {
-  width: 98%;
+  width: 100%;
   margin: 8px 0;
-  padding: 12px 20px;
-  box-sizing: border-box;
+  border: none;
+  padding: 16px 22px;
+  border-radius: 4px;
   border-left: 4px solid var(--title-color);
 }
 
