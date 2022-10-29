@@ -13,7 +13,6 @@
 }
 
 body {
-  overflow: hidden;
   font-family: 'Spartan';
   background-color: var(--body-bg-color);
 }
@@ -136,10 +135,6 @@ form button:hover {
 
 
 @media (max-width: 998px) {
-  body {
-    overflow: scroll;
-  }
-
   .content {
     width: 90%;
     height: 90%;
