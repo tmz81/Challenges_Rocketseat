@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #04D361;
-}
-
 :root {
   --body-bg-color: #121214;
   --text-color: #E1E1E6;
@@ -17,15 +13,37 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  overflow: hidden;
   background-color: var(--body-bg-color);
 }
 
-.box-1 {
-  margin: 50px 30px;
+input {
+  width: 98%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-left: 4px solid var(--title-color);
+}
+
+label {
+  color: var(--form-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 30%;
+  height: 84vh;
+  margin: 2rem;
+  align-items: center;
+  text-align: start;
 }
 
 .logo {
@@ -33,41 +51,35 @@ body {
   height: 94px;
 }
 
-.bg-img {
-  width: 100%;
+.text {
+  padding-top: 92px;
 }
 
-.title {
+.text h1 {
   color: var(--title-color);
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 32px;
 }
 
-.form-text {
-  color: #FFFF;
-  font-weight: bold;
+.text p {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text span {
+  color: var(--text-color);
+  font-weight: 400;
   font-size: 14px;
 }
 
-p {
-  color: var(--text-color);
+.bg-image {
+  width: auto;
+  height: 100vh;
 }
 
-label {
-  color: var(--form-color);
-}
-
-.form {
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-button {
-  color: var(--bg-button-color);
-
-}
-
-input {
-  padding: 17px 15px;
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
